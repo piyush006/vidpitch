@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="10">
+  <test name="Test1" >
+  <parameter name="browserName" value ="chrome"></parameter>
+    <classes>
+      <class name="Vipitch.Login"/>
+      <class name="Vipitch.Videolisting"/>
+      <class name="Vipitch.CheckGIF"/>
+      <class name="Vipitch.ModifyVideo"/>
+      <class name="Vipitch.PurchaseVideo"/>
+      </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

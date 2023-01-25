@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="10" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="10" parallel="tests" name="Test1(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="Vipitch.Videolisting">
+        <methods>
+          <include name="tearDown"/>
+          <include name="checkVideo"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Vipitch.Videolisting -->
+      <class name="Vipitch.CheckGIF">
+        <methods>
+          <include name="tearDown"/>
+          <include name="checkVideo"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Vipitch.CheckGIF -->
+      <class name="Vipitch.ModifyVideo">
+        <methods>
+          <include name="tearDown"/>
+          <include name="modify"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Vipitch.ModifyVideo -->
+      <class name="Vipitch.PurchaseVideo">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="modify"/>
+        </methods>
+      </class> <!-- Vipitch.PurchaseVideo -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="10" parallel="tests" name="Test(failed)">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="Vipitch.ModifyVideoF">
+        <methods>
+          <include name="tearDown"/>
+          <include name="modify"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Vipitch.ModifyVideoF -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
