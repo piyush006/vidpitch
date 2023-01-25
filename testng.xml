@@ -9,7 +9,19 @@
       <class name="Vipitch.CheckGIF"/>
       <class name="Vipitch.ModifyVideo"/>
       <class name="Vipitch.PurchaseVideo"/>
+      <class name="Vipitch.ModifyVideo"/>
       </classes>
+      </test>
+      <test name="Test" >
+    <parameter name="browserName" value ="firefox"></parameter>
+    <classes>
+      <class name="Vipitch.LoginF"/>
+      <class name="Vipitch.VideolistingF"/>
+      <class name="Vipitch.CheckGIFF"/>
+      <class name="Vipitch.ModifyVideoF"/>
+      <class name="Vipitch.PurchaseVideoF"/>
+      <class name="Vipitch.ModifyVideoF"/>
+    </classes>
     
   </test> <!-- Test -->
 </suite> <!-- Suite -->

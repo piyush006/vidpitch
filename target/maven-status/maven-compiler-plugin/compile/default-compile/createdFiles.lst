@@ -1,2 +1,15 @@
-Vipitch\Setup.class
+Vipitch\PurchaseVideo.class
 Excel\utility\Xls_Reader.class
+Vipitch\DownloadVideo.class
+Vipitch\PurchaseVideoF.class
+Vipitch\Login.class
+Vipitch\DownloadVideoF.class
+Vipitch\VideolistingF.class
+Vipitch\CheckGIFF.class
+Vipitch\LoginF.class
+Vipitch\Videolisting.class
+Vipitch\Debug.class
+Vipitch\ModifyVideoF.class
+Vipitch\Setup.class
+Vipitch\ModifyVideo.class
+Vipitch\CheckGIF.class
