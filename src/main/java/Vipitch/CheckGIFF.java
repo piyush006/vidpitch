@@ -19,6 +19,8 @@ public class CheckGIFF extends Setup{
 		driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();
 		driver.findElement(By.xpath("//table/tbody/tr/td[4]/span/button[2]")).click();
 		
+		
+		
 	
 		
 		
