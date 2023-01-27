@@ -4,23 +4,23 @@
   <test name="Test1" >
   <parameter name="browserName" value ="chrome"></parameter>
     <classes>
-      <class name="Vipitch.Login"/>
-      <class name="Vipitch.Videolisting"/>
-      <class name="Vipitch.CheckGIF"/>
-      <class name="Vipitch.ModifyVideo"/>
-      <class name="Vipitch.PurchaseVideo"/>
-      <class name="Vipitch.ModifyVideo"/>
+      <class name="vidpitch.Login"/>
+      <class name="vidpitch.Videolisting"/>
+      <class name="vidpitch.CheckGIF"/>
+      <class name="vidpitch.ModifyVideo"/>
+      <class name="vidpitch.PurchaseVideo"/>
+      <class name="vidpitch.DownloadVideo"/>
       </classes>
       </test>
       <test name="Test" >
     <parameter name="browserName" value ="firefox"></parameter>
     <classes>
-      <class name="Vipitch.LoginF"/>
-      <class name="Vipitch.VideolistingF"/>
-      <class name="Vipitch.CheckGIFF"/>
-      <class name="Vipitch.ModifyVideoF"/>
-      <class name="Vipitch.PurchaseVideoF"/>
-      <class name="Vipitch.ModifyVideoF"/>
+      <class name="vidpitch.LoginF"/>
+      <class name="vidpitch.VideolistingF"/>
+      <class name="vidpitch.CheckGIFF"/>
+      <class name="vidpitch.ModifyVideoF"/>
+      <class name="vidpitch.PurchaseVideoF"/>
+      <class name="vidpitch.DownloadVideoF"/>
     </classes>
     
   </test> <!-- Test -->
