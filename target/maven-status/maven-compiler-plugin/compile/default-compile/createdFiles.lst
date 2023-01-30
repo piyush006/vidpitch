@@ -5,10 +5,8 @@ vidpitch\CheckGIF.class
 vidpitch\LoginF.class
 Excel\utility\Xls_Reader.class
 vidpitch\PurchaseVideoF.class
-vidpitch\DownloadVideoF.class
 vidpitch\VideolistingF.class
 vidpitch\ModifyVideoF.class
 vidpitch\CheckGIFF.class
 vidpitch\Setup.class
 vidpitch\Login.class
-vidpitch\DownloadVideo.class

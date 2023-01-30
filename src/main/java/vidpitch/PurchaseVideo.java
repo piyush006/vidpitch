@@ -2,6 +2,20 @@ package vidpitch;
 
 
 import java.util.List;
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
@@ -17,7 +31,7 @@ public class PurchaseVideo extends Setup{
 	
 public void modify() throws InterruptedException{
 
-driver.findElement(By.id("email")).sendKeys("Alex.Marsh.ef29da07e45849d49e39950fef72c0ee@mailinator.com");
+driver.findElement(By.id("email")).sendKeys("Randy.Hoye.57f3448f758b4ee0944ad0632b733ae6@mailinator.com");
 driver.findElement(By.id("password")).sendKeys("SK47Bill@n");
 driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();
 driver.findElement(By.xpath("//table/tbody/tr/td[1]")).click();
@@ -45,8 +59,10 @@ driver.findElement(By.id("Field-cvcInput")).sendKeys("123");
 
 driver.switchTo().defaultContent();
 
-driver.findElement(By.xpath("//span[@id='button-text']"));
-System.out.println("Find");
+Thread.sleep(3000);
+
+driver.findElement(By.xpath("//span[@id='button-text']")).click();
+Thread.sleep(4000);
 
 
 

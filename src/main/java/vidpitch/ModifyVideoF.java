@@ -1,6 +1,20 @@
 package vidpitch;
 
 import java.time.Duration;
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -16,48 +30,42 @@ public class ModifyVideoF extends Setup{
 	@Test
 	
 	public void modify() throws InterruptedException{
-	driver.findElement(By.id("email")).sendKeys("Ingrid.Kennemer.7582f03d567c409caa186b8bd5e64612@mailinator.com");
-	driver.findElement(By.id("password")).sendKeys("SK47Bill@n");
-	driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();
-	driver.findElement(By.xpath("//table/tbody/tr/td[1]")).click();
-	driver.findElement(By.xpath("//a[@type='button']")).click();
-	Thread.sleep(5000);
-	driver.findElement(By.xpath("//div[3]/button/img")).click();
-	driver.findElement(By.xpath("//button[@type='submit']")).click();
-	Thread.sleep(1000);
-	driver.findElement(By.xpath("//button[@type='submit']")).click();
-	Thread.sleep(1000);
-	driver.findElement(By.xpath("//button[@type='submit']")).click();
-	Thread.sleep(1000);
-	driver.findElement(By.xpath("//button[@type='submit']")).click();
-	Thread.sleep(1000);
-	driver.findElement(By.xpath("//button[@type='submit']")).click();
-	
-	
-	driver.findElement(By.name("BROKER_NAME")).sendKeys(Keys.CONTROL,Keys.chord("A"),Keys.DELETE);
-	driver.findElement(By.name("BROKER_NAME")).sendKeys("piyush soni");
-	driver.findElement(By.xpath("//input[@label='Broker Office Full Address']")).sendKeys(Keys.CONTROL,Keys.chord("A"),Keys.DELETE);
-	driver.findElement(By.xpath("//input[@label='Broker Office Full Address']")).sendKeys("Crystal IT Park 4th floor");
-	driver.findElement(By.xpath("//button[@type='submit']")).click();
-	driver.findElement(By.xpath("//button[contains(text(),'Yes, Render')]")).click();
-	
-	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(180));
-   wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@type='button']"))).click();
-   driver.findElement(By.xpath("//button[@type='submit']")).click();
-	Thread.sleep(1000);
-	driver.findElement(By.xpath("//button[@type='submit']")).click();
-	Thread.sleep(1000);
-	driver.findElement(By.xpath("//button[@type='submit']")).click();
-	Thread.sleep(1000);
-	driver.findElement(By.xpath("//button[@type='submit']")).click();
-	Thread.sleep(1000);
-	driver.findElement(By.xpath("//button[@type='submit']")).click();
-	Thread.sleep(1000);
-	String getbrokername= driver.findElement(By.xpath("//input[@label='Broker Name']")).getAttribute("value");
-	System.out.println(getbrokername);
-	Assert.assertEquals(getbrokername, broker);
-    String getaddress = driver.findElement(By.xpath("//input[@label='Broker Office Full Address']")).getAttribute("value");
-    Assert.assertEquals(getaddress, Address);
-	
+		driver.findElement(By.id("email")).sendKeys("Joe.Dimyan.c59443904fa740d4b4538afd9bb31c91@mailinator.com");
+		driver.findElement(By.id("password")).sendKeys("SK47Bill@n");
+		driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();
+		driver.findElement(By.xpath("//table/tbody/tr/td[1]")).click();
+		driver.findElement(By.xpath("//a[@type='button']")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//div[3]/button/img")).click();
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.name("BROKER_NAME")).sendKeys(Keys.CONTROL,Keys.chord("A"),Keys.DELETE);
+		driver.findElement(By.name("BROKER_NAME")).sendKeys("piyush soni");
+		driver.findElement(By.xpath("//input[@label='Broker Office Full Address']")).sendKeys(Keys.CONTROL,Keys.chord("A"),Keys.DELETE);
+		driver.findElement(By.xpath("//input[@label='Broker Office Full Address']")).sendKeys("Crystal IT Park 4th floor");
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//button[contains(text(),'Yes, Render')]")).click();
+		
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(180));
+	   wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@type='button']"))).click();
+	   driver.findElement(By.xpath("//button[@type='submit']")).click();
+		Thread.sleep(1000);
+		
+		
+		String getbrokername= driver.findElement(By.xpath("//input[@label='Broker Name']")).getAttribute("value");
+		System.out.println(getbrokername);
+		Assert.assertEquals(getbrokername, broker);
+	    String getaddress = driver.findElement(By.xpath("//input[@label='Broker Office Full Address']")).getAttribute("value");
+	    Assert.assertEquals(getaddress, Address);
+		
 	}
 }
