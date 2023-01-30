@@ -30,7 +30,7 @@ public class ModifyVideoF extends Setup{
 	@Test
 	
 	public void modify() throws InterruptedException{
-		driver.findElement(By.id("email")).sendKeys("Joe.Dimyan.c59443904fa740d4b4538afd9bb31c91@mailinator.com");
+		driver.findElement(By.id("email")).sendKeys("Armond.Aivazyan.0ccc04e86cd7458c9a008c24f3fa6121@mailinator.com");
 		driver.findElement(By.id("password")).sendKeys("SK47Bill@n");
 		driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();
 		driver.findElement(By.xpath("//table/tbody/tr/td[1]")).click();
@@ -39,25 +39,35 @@ public class ModifyVideoF extends Setup{
 		driver.findElement(By.xpath("//div[3]/button/img")).click();
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		Thread.sleep(1000);
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		Thread.sleep(1000);
 		driver.findElement(By.name("BROKER_NAME")).sendKeys(Keys.CONTROL,Keys.chord("A"),Keys.DELETE);
 		driver.findElement(By.name("BROKER_NAME")).sendKeys("piyush soni");
 		driver.findElement(By.xpath("//input[@label='Broker Office Full Address']")).sendKeys(Keys.CONTROL,Keys.chord("A"),Keys.DELETE);
 		driver.findElement(By.xpath("//input[@label='Broker Office Full Address']")).sendKeys("Crystal IT Park 4th floor");
+		
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
-		Thread.sleep(1000);
+		
 		driver.findElement(By.xpath("//button[contains(text(),'Yes, Render')]")).click();
 		
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(180));
 	   wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@type='button']"))).click();
 	   driver.findElement(By.xpath("//button[@type='submit']")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		Thread.sleep(1000);
 		
 		
