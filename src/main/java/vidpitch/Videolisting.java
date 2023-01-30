@@ -30,7 +30,7 @@ public class Videolisting extends Setup{
 @Test
 public void checkVideo() throws InterruptedException {
 	
-	driver.findElement(By.id("email")).sendKeys("Randy.Hoye.57f3448f758b4ee0944ad0632b733ae6@mailinator.com");
+	driver.findElement(By.id("email")).sendKeys("Nathan.Vasseur.86da940aff2742788f8e39a35017bfa8@mailinator.com");
 	driver.findElement(By.id("password")).sendKeys("SK47Bill@n");
 	driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();	
 driver.findElement(By.xpath("//table/tbody/tr/td[4]/span/button[1]")).click();
