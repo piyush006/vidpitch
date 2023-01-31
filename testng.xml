@@ -6,7 +6,7 @@
     <classes>
       <class name="vidpitch.Login"/>
       <class name="vidpitch.Videolisting"/>
-      <class name="vidpitch.CheckGIF"/>
+      <class name="vidpitch.CheckGIFC"/>
       <class name="vidpitch.ModifyVideo"/>
       <class name="vidpitch.PurchaseVideo"/>
        </classes>
