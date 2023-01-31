@@ -30,6 +30,8 @@ public class Login extends Setup{
 	driver.findElement(By.xpath("//span[@class='user-circle rounded-circle']")).click();
 	String roleA = driver.findElement(By.xpath("//p/b")).getText();
 	Assert.assertEquals(roleA, roleE);
+		
+		
 	
 	}	
 	
