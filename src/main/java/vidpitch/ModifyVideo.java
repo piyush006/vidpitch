@@ -41,8 +41,8 @@ public class ModifyVideo extends Setup {
 		driver.findElement(By.xpath("//a[@type='button']")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//div[3]/button/img")).click();
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		Thread.sleep(1000);
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		Thread.sleep(1000);
