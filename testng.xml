@@ -9,7 +9,7 @@
       <class name="vidpitch.CheckGIFC"/>
       <class name="vidpitch.ModifyVideo"/>
       <class name="vidpitch.PurchaseVideo"/>
-       </classes>
+      </classes>
        </test>
       <test name="Test" >
     <parameter name="browserName" value ="firefox"></parameter>
@@ -19,6 +19,7 @@
       <class name="vidpitch.CheckGIFF"/>
       <class name="vidpitch.ModifyVideoF"/>
       <class name="vidpitch.PurchaseVideoF"/>
+      <class name="vidpitch.DownloadVideoF"/>
       
     </classes>
     </test> <!-- Test -->

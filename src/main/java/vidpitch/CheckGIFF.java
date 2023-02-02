@@ -28,7 +28,7 @@ public class CheckGIFF extends Setup{
 	@Test
 	public void checkVideo() throws InterruptedException {
 		
-		driver.findElement(By.id("email")).sendKeys("Armond.Aivazyan.0ccc04e86cd7458c9a008c24f3fa6121@mailinator.com");
+		driver.findElement(By.id("email")).sendKeys("Melissa.Naeder.b456b8e8bef3404293659d548969ba6a@mailinator.com");
 		driver.findElement(By.id("password")).sendKeys("SK47Bill@n");
 		driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();
 		driver.findElement(By.xpath("//table/tbody/tr/td[4]/span/button[2]")).click();

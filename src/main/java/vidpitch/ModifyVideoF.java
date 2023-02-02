@@ -30,7 +30,7 @@ public class ModifyVideoF extends Setup{
 	@Test
 	
 	public void modify() throws InterruptedException{
-		driver.findElement(By.id("email")).sendKeys("Armond.Aivazyan.0ccc04e86cd7458c9a008c24f3fa6121@mailinator.com");
+		driver.findElement(By.id("email")).sendKeys("Melissa.Naeder.b456b8e8bef3404293659d548969ba6a@mailinator.com");
 		driver.findElement(By.id("password")).sendKeys("SK47Bill@n");
 		driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();
 		driver.findElement(By.xpath("//table/tbody/tr/td[1]")).click();
@@ -58,7 +58,7 @@ public class ModifyVideoF extends Setup{
 		
 		driver.findElement(By.xpath("//button[contains(text(),'Yes, Render')]")).click();
 		
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(180));
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(240));
 	   wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@type='button']"))).click();
 	   driver.findElement(By.xpath("//button[@type='submit']")).click();
 		Thread.sleep(1000);

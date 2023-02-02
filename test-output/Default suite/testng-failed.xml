@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="vidpitch.CheckGIFF">
+      <class name="vidpitch.DownloadVideoG">
         <methods>
-          <include name="checkVideo"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
+          <include name="DownloadVideo"/>
         </methods>
-      </class> <!-- vidpitch.CheckGIFF -->
+      </class> <!-- vidpitch.DownloadVideoG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

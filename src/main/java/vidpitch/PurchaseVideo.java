@@ -31,7 +31,7 @@ public class PurchaseVideo extends Setup{
 	
 public void modify() throws InterruptedException{
 
-driver.findElement(By.id("email")).sendKeys("Nathan.Vasseur.86da940aff2742788f8e39a35017bfa8@mailinator.com");
+driver.findElement(By.id("email")).sendKeys("Frank.Awdish.3ed28b39a49542719e5ae1434b5d1aad@mailinator.com");
 driver.findElement(By.id("password")).sendKeys("SK47Bill@n");
 driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();
 driver.findElement(By.xpath("//table/tbody/tr/td[1]")).click();
