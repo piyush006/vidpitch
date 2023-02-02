@@ -1,24 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="tests" thread-count="10">
-  <test name="Test1" >
-  <parameter name="browserName" value ="chrome"></parameter>
-    <classes>
-      <class name="vidpitch.Login"/>
-      <class name="vidpitch.Videolisting"/>
-      <class name="vidpitch.CheckGIFC"/>
-      <class name="vidpitch.ModifyVideo"/>
-      <class name="vidpitch.PurchaseVideo"/>
-      </classes>
-       </test>
+  
       <test name="Test" >
-    <parameter name="browserName" value ="firefox"></parameter>
+   
     <classes>
-      <class name="vidpitch.LoginF"/>
-      <class name="vidpitch.VideolistingF"/>
-      <class name="vidpitch.CheckGIFF"/>
-      <class name="vidpitch.ModifyVideoF"/>
-      <class name="vidpitch.PurchaseVideoF"/>
+    
       <class name="vidpitch.DownloadVideoF"/>
       
     </classes>

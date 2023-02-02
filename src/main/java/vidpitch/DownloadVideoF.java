@@ -35,7 +35,7 @@ public class DownloadVideoF {
 	Thread.sleep(2000);
 	ArrayList<String> wid = new ArrayList<String>(driver.getWindowHandles());
 	//switch to active tab
-	driver.switchTo().window(wid.get(1));
+	driver.switchTo().window(wid.get(2));
 	Thread.sleep(1000);
 	driver.findElement(By.xpath("//button[contains(text(),'Download Video')]")).click();	
 	
