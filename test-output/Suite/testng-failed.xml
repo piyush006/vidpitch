@@ -4,13 +4,39 @@
   <test thread-count="10" parallel="tests" name="Test1(failed)">
     <parameter name="browserName" value="chrome"/>
     <classes>
-      <class name="vidpitch.Videolisting">
+      <class name="vidpitch.PurchaseVideo">
         <methods>
-          <include name="checkVideo"/>
+          <include name="modify"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- vidpitch.Videolisting -->
+      </class> <!-- vidpitch.PurchaseVideo -->
+      <class name="vidpitch.ModifyVideo">
+        <methods>
+          <include name="modify"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- vidpitch.ModifyVideo -->
     </classes>
   </test> <!-- Test1(failed) -->
+  <test thread-count="10" parallel="tests" name="Test(failed)">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="vidpitch.ModifyVideoF">
+        <methods>
+          <include name="modify"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- vidpitch.ModifyVideoF -->
+      <class name="vidpitch.PurchaseVideoF">
+        <methods>
+          <include name="tearDown"/>
+          <include name="modify"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- vidpitch.PurchaseVideoF -->
+    </classes>
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
