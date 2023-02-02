@@ -21,10 +21,10 @@ import org.testng.annotations.Test;
 public class PurchaseVideoF extends Setup{
 	@Test
 	
-	public void modify() throws InterruptedException{
+	public void purchasef() throws InterruptedException{
 
 
-	driver.findElement(By.id("email")).sendKeys("Chuck.Langston.038e09f700bf4c75a351040754d14187@mailinator.com");
+	driver.findElement(By.id("email")).sendKeys("Stacy.VierheiligFraser.e226dd0f5e7d4651932ecb2370c05d94@mailinator.com");
 	driver.findElement(By.id("password")).sendKeys("SK47Bill@n");
 	driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();
 	driver.findElement(By.xpath("//table/tbody/tr/td[1]")).click();

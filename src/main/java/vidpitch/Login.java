@@ -22,9 +22,9 @@ public class Login extends Setup{
 	
 @Test
 	
-	public void test() {
+	public void loging() {
 		
-	driver.findElement(By.id("email")).sendKeys("Chad.Burkemper.ce669c2aac9e433fa26f060eae4a2db7@mailinator.com");
+	driver.findElement(By.id("email")).sendKeys("Jonathan.Shirazi.44e1f3fd052b4c508b095bf09a378ffc@mailinator.com");
 	driver.findElement(By.id("password")).sendKeys("SK47Bill@n");
 	driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();
 	driver.findElement(By.xpath("//span[@class='user-circle rounded-circle']")).click();

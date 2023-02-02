@@ -22,7 +22,7 @@ public class DownloadVideoF {
 		
 	 driver.get("https://www.mailinator.com/");
 		
-	    driver.findElement(By.id("search")).sendKeys("Chuck.Langston.038e09f700bf4c75a351040754d14187@mailinator.com");
+	    driver.findElement(By.id("search")).sendKeys("Jonathan.Shirazi.44e1f3fd052b4c508b095bf09a378ffc@mailinator.com");
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//button[contains(text(),'GO')]")).click();
 		Thread.sleep(2000);
@@ -33,7 +33,7 @@ public class DownloadVideoF {
 
 	Thread.sleep(3000);
 	driver.findElement(By.xpath("//p/a")).click();
-	System.out.println("Piyush");
+	
 	Thread.sleep(2000);
 	ArrayList<String> wid = new ArrayList<String>(driver.getWindowHandles());
 	
