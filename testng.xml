@@ -2,13 +2,29 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="tests" thread-count="10">
   
-      <test name="Test" >
-   
+    <test name="Test1" >
+  <parameter name="browserName" value ="chrome"></parameter>
     <classes>
-    
-      <class name="vidpitch.DownloadVideoF"/>
+      <class name="vidpitch.Login"/>
+      <class name="vidpitch.Videolisting"/>
+      <class name="vidpitch.CheckGIFC"/>
+      <class name="vidpitch.ModifyVideo"/>
+      <class name="vidpitch.PurchaseVideo"/>
+       <class name="vidpitch.DownloadVideoF"/>
+      </classes>
+       </test>
+      <test name="Test" >
+    <parameter name="browserName" value ="firefox"></parameter>
+    <classes>
+      <class name="vidpitch.LoginF"/>
+      <class name="vidpitch.VideolistingF"/>
+      <class name="vidpitch.CheckGIFF"/>
+      <class name="vidpitch.ModifyVideoF"/>
+      <class name="vidpitch.PurchaseVideoF"/>
+     
       
     </classes>
     </test> <!-- Test -->
      
 </suite> <!-- Suite -->
+    
