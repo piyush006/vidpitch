@@ -32,10 +32,13 @@ public class DownloadVideoF {
 
 	Thread.sleep(3000);
 	driver.findElement(By.xpath("//p/a")).click();
+	System.out.println("Piyush");
 	Thread.sleep(2000);
 	ArrayList<String> wid = new ArrayList<String>(driver.getWindowHandles());
+	
 	//switch to active tab
-	driver.switchTo().window(wid.get(0));
+	driver.switchTo().window(wid.get(1));
+	System.out.println("Piyush");
 	Thread.sleep(1000);
 	driver.findElement(By.xpath("//button[contains(text(),'Download Video')]")).click();	
 	
