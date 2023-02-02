@@ -21,7 +21,7 @@ public class DownloadVideoF {
 		
 	 driver.get("https://www.mailinator.com/");
 		
-	    driver.findElement(By.id("search")).sendKeys("Sarah.Bolding.b773cec85422409d97228934a4eb0d6b@mailinator.com");
+	    driver.findElement(By.id("search")).sendKeys("John.Hill.d00fd3afd2ad449782f3b6f62d6a47a1@mailinator.com");
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//button[contains(text(),'GO')]")).click();
 		Thread.sleep(2000);
