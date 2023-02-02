@@ -26,7 +26,7 @@ public class LoginF extends Setup{
 	
 	public void test() {
 		
-	driver.findElement(By.id("email")).sendKeys("Melissa.Naeder.b456b8e8bef3404293659d548969ba6a@mailinator.com");
+	driver.findElement(By.id("email")).sendKeys("Brian.BocciSIOR.0a631f8a91004ca7b86e461b53b4e4ef@mailinator.com");
 	driver.findElement(By.id("password")).sendKeys("SK47Bill@n");
 	driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();
 	driver.findElement(By.xpath("//span[@class='user-circle rounded-circle']")).click();

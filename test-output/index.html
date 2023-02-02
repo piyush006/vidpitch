@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods, 1 failed,   11 passed</span>
+                    <span class="method-stats">11 methods, 1 failed,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="vidpitch.DownloadVideoG" class="method navigator-link" hash-for-method="DownloadVideo">DownloadVideo</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="vidpitch.Videolisting" class="method navigator-link" hash-for-method="checkVideo">checkVideo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -123,7 +123,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="vidpitch.CheckGIFF" class="method navigator-link" hash-for-method="checkVideo">checkVideo</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="vidpitch.CheckGIFC" class="method navigator-link" hash-for-method="checkVideo">checkVideo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -133,12 +133,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="vidpitch.CheckGIFC" class="method navigator-link" hash-for-method="checkVideo">checkVideo</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="vidpitch.CheckGIFF" class="method navigator-link" hash-for-method="checkVideo">checkVideo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="vidpitch.Videolisting" class="method navigator-link" hash-for-method="checkVideo">checkVideo</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="vidpitch.ModifyVideo" class="method navigator-link" hash-for-method="modify">modify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="vidpitch.PurchaseVideo" class="method navigator-link" hash-for-method="modify">modify</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -153,22 +158,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="vidpitch.PurchaseVideo" class="method navigator-link" hash-for-method="modify">modify</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="vidpitch.ModifyVideo" class="method navigator-link" hash-for-method="modify">modify</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="vidpitch.Login" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="vidpitch.LoginF" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="vidpitch.Login" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -186,46 +181,27 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">vidpitch.DownloadVideoG</span>
+              <span class="class-name">vidpitch.Videolisting</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="DownloadVideo">
-                  </a> <!-- DownloadVideo -->
-                  <span class="method-name">DownloadVideo</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
-Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3d8637361bcd29dabd665ff154d391b0, get {url=https://www.mailinator.com/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.74, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\47BILL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55560}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55560/devtoo..., se:cdpVersion: 109.0.5414.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3d8637361bcd29dabd665ff154d391b0
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:981)
-	at vidpitch.DownloadVideoG.DownloadVideo(DownloadVideoG.java:21)
+                  <a name="checkVideo">
+                  </a> <!-- checkVideo -->
+                  <span class="method-name">checkVideo</span>
+                  <div class="stack-trace">java.lang.Error: Unresolved compilation problems: 
+	By cannot be resolved
+	By cannot be resolved
+	By cannot be resolved
+	By cannot be resolved
+	By cannot be resolved
+
+	at vidpitch.Videolisting.checkVideo(Videolisting.java:10)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
-	... 34 more
 ... Removed 16 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -243,6 +219,21 @@ Caused by: java.util.concurrent.TimeoutException
                   <a name="checkVideo">
                   </a> <!-- checkVideo -->
                   <span class="method-name">checkVideo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">vidpitch.DownloadVideoF</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DownloadVideo">
+                  </a> <!-- DownloadVideo -->
+                  <span class="method-name">DownloadVideo</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -310,21 +301,6 @@ Caused by: java.util.concurrent.TimeoutException
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">vidpitch.PurchaseVideoF</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="modify">
-                  </a> <!-- modify -->
-                  <span class="method-name">modify</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">vidpitch.VideolistingF</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -340,14 +316,14 @@ Caused by: java.util.concurrent.TimeoutException
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">vidpitch.CheckGIFC</span>
+              <span class="class-name">vidpitch.PurchaseVideoF</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkVideo">
-                  </a> <!-- checkVideo -->
-                  <span class="method-name">checkVideo</span>
+                  <a name="modify">
+                  </a> <!-- modify -->
+                  <span class="method-name">modify</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -355,7 +331,7 @@ Caused by: java.util.concurrent.TimeoutException
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">vidpitch.Videolisting</span>
+              <span class="class-name">vidpitch.CheckGIFC</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -382,21 +358,6 @@ Caused by: java.util.concurrent.TimeoutException
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">vidpitch.DownloadVideoF</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="DownloadVideo">
-                  </a> <!-- DownloadVideo -->
-                  <span class="method-name">DownloadVideo</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -415,7 +376,6 @@ Caused by: java.util.concurrent.TimeoutException
       &lt;class name=&quot;vidpitch.CheckGIFC&quot;/&gt;
       &lt;class name=&quot;vidpitch.ModifyVideo&quot;/&gt;
       &lt;class name=&quot;vidpitch.PurchaseVideo&quot;/&gt;
-      &lt;class name=&quot;vidpitch.DownloadVideoG&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test1 --&gt;
   &lt;test thread-count=&quot;10&quot; parallel=&quot;tests&quot; name=&quot;Test&quot;&gt;
@@ -440,7 +400,7 @@ Caused by: java.util.concurrent.TimeoutException
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test1 (6 classes)</span>
+                <span class="test-name">Test1 (5 classes)</span>
               </li>
               <li>
                 <span class="test-name">Test (6 classes)</span>
@@ -469,60 +429,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(12);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'DownloadVideo')
-data.setCell(0, 2, 'vidpitch.DownloadVideoG')
-data.setCell(0, 3, 180011);
+data.setCell(0, 1, 'modify')
+data.setCell(0, 2, 'vidpitch.ModifyVideo')
+data.setCell(0, 3, 106428);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'modify')
-data.setCell(1, 2, 'vidpitch.ModifyVideo')
-data.setCell(1, 3, 100868);
+data.setCell(1, 2, 'vidpitch.ModifyVideoF')
+data.setCell(1, 3, 104988);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'modify')
-data.setCell(2, 2, 'vidpitch.ModifyVideoF')
-data.setCell(2, 3, 100228);
+data.setCell(2, 1, 'DownloadVideo')
+data.setCell(2, 2, 'vidpitch.DownloadVideoF')
+data.setCell(2, 3, 18478);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'DownloadVideo')
-data.setCell(3, 2, 'vidpitch.DownloadVideoF')
-data.setCell(3, 3, 20055);
+data.setCell(3, 1, 'modify')
+data.setCell(3, 2, 'vidpitch.PurchaseVideo')
+data.setCell(3, 3, 15460);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'modify')
-data.setCell(4, 2, 'vidpitch.PurchaseVideo')
-data.setCell(4, 3, 14020);
+data.setCell(4, 2, 'vidpitch.PurchaseVideoF')
+data.setCell(4, 3, 11213);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'checkVideo')
-data.setCell(5, 2, 'vidpitch.Videolisting')
-data.setCell(5, 3, 9772);
+data.setCell(5, 2, 'vidpitch.VideolistingF')
+data.setCell(5, 3, 10038);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'modify')
-data.setCell(6, 2, 'vidpitch.PurchaseVideoF')
-data.setCell(6, 3, 9583);
+data.setCell(6, 1, 'checkVideo')
+data.setCell(6, 2, 'vidpitch.CheckGIFC')
+data.setCell(6, 3, 5431);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'checkVideo')
-data.setCell(7, 2, 'vidpitch.VideolistingF')
-data.setCell(7, 3, 9569);
+data.setCell(7, 2, 'vidpitch.CheckGIFF')
+data.setCell(7, 3, 2168);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'checkVideo')
-data.setCell(8, 2, 'vidpitch.CheckGIFC')
-data.setCell(8, 3, 2395);
+data.setCell(8, 1, 'test')
+data.setCell(8, 2, 'vidpitch.Login')
+data.setCell(8, 3, 2135);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'checkVideo')
-data.setCell(9, 2, 'vidpitch.CheckGIFF')
-data.setCell(9, 3, 1791);
+data.setCell(9, 1, 'test')
+data.setCell(9, 2, 'vidpitch.LoginF')
+data.setCell(9, 3, 1241);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'test')
-data.setCell(10, 2, 'vidpitch.LoginF')
-data.setCell(10, 3, 1470);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'test')
-data.setCell(11, 2, 'vidpitch.Login')
-data.setCell(11, 3, 1405);
+data.setCell(10, 1, 'checkVideo')
+data.setCell(10, 2, 'vidpitch.Videolisting')
+data.setCell(10, 3, 2);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -565,206 +521,177 @@ return data;
               <div class="chronological-class-name">vidpitch.Login</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">test</span>
-                <span class="method-start">7692 ms</span>
+                <span class="method-start">9025 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9103 ms</span>
+                <span class="method-start">11166 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">vidpitch.Videolisting</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">9422 ms</span>
+                <span class="method-start">11657 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">vidpitch.LoginF</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">test</span>
-                <span class="method-start">11720 ms</span>
+                <span class="method-start">14522 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13193 ms</span>
+                <span class="method-start">15765 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">vidpitch.Videolisting</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">checkVideo</span>
-                <span class="method-start">15036 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">vidpitch.VideolistingF</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(firefox)</span>
-                <span class="method-start">15134 ms</span>
+                <span class="method-start">17197 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">checkVideo</span>
-                <span class="method-start">24504 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">vidpitch.Videolisting</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkVideo</span>
+                <span class="method-start">17407 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">24812 ms</span>
+                <span class="method-start">17412 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">vidpitch.CheckGIFC</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">25992 ms</span>
+                <span class="method-start">17732 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkVideo</span>
-                <span class="method-start">31529 ms</span>
+                <span class="method-start">24238 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">33927 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">vidpitch.VideolistingF</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkVideo</span>
+                <span class="method-start">29438 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">vidpitch.CheckGIFC</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">34074 ms</span>
+                <span class="method-start">29673 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">vidpitch.ModifyVideo</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">34559 ms</span>
+                <span class="method-start">30173 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">modify</span>
+                <span class="method-start">35540 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">vidpitch.VideolistingF</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">39479 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">vidpitch.CheckGIFF</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(firefox)</span>
-                <span class="method-start">36205 ms</span>
+                <span class="method-start">46463 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">vidpitch.ModifyVideo</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">modify</span>
-                <span class="method-start">40313 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">vidpitch.CheckGIFF</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">checkVideo</span>
-                <span class="method-start">48640 ms</span>
+                <span class="method-start">59676 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">50432 ms</span>
+                <span class="method-start">61847 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">vidpitch.ModifyVideoF</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(firefox)</span>
-                <span class="method-start">51675 ms</span>
+                <span class="method-start">63525 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">modify</span>
-                <span class="method-start">60446 ms</span>
+                <span class="method-start">71678 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">vidpitch.ModifyVideo</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">141183 ms</span>
+                <span class="method-start">141969 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">vidpitch.PurchaseVideo</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">141622 ms</span>
+                <span class="method-start">142313 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">modify</span>
-                <span class="method-start">146194 ms</span>
+                <span class="method-start">147388 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">160216 ms</span>
+                <span class="method-start">162853 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">vidpitch.DownloadVideoG</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">160629 ms</span>
-              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">vidpitch.ModifyVideoF</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">160676 ms</span>
+                <span class="method-start">176667 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">vidpitch.PurchaseVideoF</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(firefox)</span>
-                <span class="method-start">162030 ms</span>
+                <span class="method-start">177522 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">vidpitch.DownloadVideoG</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">DownloadVideo</span>
-                <span class="method-start">166521 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">vidpitch.PurchaseVideoF</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">modify</span>
-                <span class="method-start">170868 ms</span>
+                <span class="method-start">187529 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">180451 ms</span>
+                <span class="method-start">198743 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">vidpitch.DownloadVideoF</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(firefox)</span>
-                <span class="method-start">181488 ms</span>
+                <span class="method-start">199502 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">DownloadVideo</span>
-                <span class="method-start">191803 ms</span>
+                <span class="method-start">211857 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">211859 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">vidpitch.DownloadVideoG</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDown</span>
-                <span class="method-start">346536 ms</span>
+                <span class="method-start">230336 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
