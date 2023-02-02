@@ -36,6 +36,7 @@ public class DownloadVideoF {
 	Thread.sleep(2000);
 	ArrayList<String> wid = new ArrayList<String>(driver.getWindowHandles());
 	
+	System.out.println(wid.size());
 	//switch to active tab
 	driver.switchTo().window(wid.get(1));
 	System.out.println("Piyush");
