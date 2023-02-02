@@ -34,7 +34,7 @@ public class ModifyVideo extends Setup {
 	@Test
 	
 	public void modify() throws InterruptedException{
-		driver.findElement(By.id("email")).sendKeys("Allan.Meadors.6c27047adda547018cf45743df31d479@mailinator.com");
+		driver.findElement(By.id("email")).sendKeys("Chad.Burkemper.ce669c2aac9e433fa26f060eae4a2db7@mailinator.com");
 		driver.findElement(By.id("password")).sendKeys("SK47Bill@n");
 		driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();
 		driver.findElement(By.xpath("//table/tbody/tr/td[1]")).click();
