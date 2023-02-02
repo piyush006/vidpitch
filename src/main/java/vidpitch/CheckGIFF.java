@@ -36,7 +36,7 @@ public class CheckGIFF extends Setup{
 		
 		
 	
-		
+	
 		
 		WebDriverWait flag = new WebDriverWait(driver,Duration.ofSeconds(40));
 		boolean flag1 = flag.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='modal-content']"))).isDisplayed();
