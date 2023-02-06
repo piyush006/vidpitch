@@ -69,7 +69,7 @@ WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(240));
 Thread.sleep(1000);
 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@id='button-text']"))).click();
 
-Thread.sleep(3000);
+Thread.sleep(4000);
 
 
 
