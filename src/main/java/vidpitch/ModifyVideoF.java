@@ -1,5 +1,6 @@
 package vidpitch;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.time.Duration;
 import java.util.ArrayList;
@@ -29,8 +30,10 @@ public class ModifyVideoF extends Setup{
 
 	@Test
 	
-	public void modifyf() throws InterruptedException{
-		driver.findElement(By.id("email")).sendKeys("Kathy.Bodnar.f75073a8e08247398de51777417cf125@mailinator.com");
+	public void modifyf() throws InterruptedException, IOException{
+		
+		Propertiesefile get = new Propertiesefile();
+		driver.findElement(By.id("email")).sendKeys(get.getemailmozila());
 		driver.findElement(By.id("password")).sendKeys("SK47Bill@n");
 		driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();
 		driver.findElement(By.xpath("//table/tbody/tr/td[1]")).click();
@@ -56,7 +59,7 @@ public class ModifyVideoF extends Setup{
 		
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		
-		driver.findElement(By.xpath("//button[contains(text(),'Yes, Render')]")).click();
+		driver.findElement(By.xpath("//button[normalize-space()='Make My New Video!']")).click();
 		
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(240));
 	   wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@type='button']"))).click();

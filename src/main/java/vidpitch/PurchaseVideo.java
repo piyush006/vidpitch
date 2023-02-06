@@ -2,6 +2,7 @@ package vidpitch;
 
 
 import java.util.List;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
@@ -29,9 +30,10 @@ public class PurchaseVideo extends Setup{
 
 @Test
 	
-public void purchaseg() throws InterruptedException{
+public void purchaseg() throws InterruptedException, IOException{
+	Propertiesefile get = new Propertiesefile();
 
-driver.findElement(By.id("email")).sendKeys("Valon.Topalli.b5e39147018b48448886062adec2a5af@mailinator.com");
+driver.findElement(By.id("email")).sendKeys(get.getemailchrome());
 driver.findElement(By.id("password")).sendKeys("SK47Bill@n");
 driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();
 driver.findElement(By.xpath("//table/tbody/tr/td[1]")).click();

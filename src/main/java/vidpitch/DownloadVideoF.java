@@ -1,5 +1,6 @@
 package vidpitch;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 
@@ -13,16 +14,18 @@ public class DownloadVideoF {
 	
 	
 	@Test
-	public void DownloadVideo() throws InterruptedException {
+	public void DownloadVideo() throws InterruptedException, IOException {
+		
+		Propertiesefile get = new Propertiesefile();
 	WebDriver	driver = new ChromeDriver();
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\47Billion\\Desktop\\chrome\\chromedriver_win32\\chromedriver.exe");
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		
-	 driver.get("https://www.mailinator.com/");
+	 driver.get(get.geturlmailinator());
 		
-	    driver.findElement(By.id("search")).sendKeys("Valon.Topalli.b5e39147018b48448886062adec2a5af@mailinator.com");
+	    driver.findElement(By.id("search")).sendKeys(get.getemailchrome());
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//button[contains(text(),'GO')]")).click();
 		Thread.sleep(2000);

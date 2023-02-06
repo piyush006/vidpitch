@@ -1,6 +1,10 @@
 package vidpitch;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -12,10 +16,14 @@ import org.testng.annotations.Test;
 public class CheckGIFC extends Setup{
 
 	
+	
 	@Test
-	public void checkGifg() throws InterruptedException {
+	public void checkGifg() throws InterruptedException, IOException {
 		
-		driver.findElement(By.id("email")).sendKeys("Valon.Topalli.b5e39147018b48448886062adec2a5af@mailinator.com");
+		Propertiesefile get = new Propertiesefile();
+		
+		
+		driver.findElement(By.id("email")).sendKeys(get.getemailchrome());
 		driver.findElement(By.id("password")).sendKeys("SK47Bill@n");
 		driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();
 		driver.findElement(By.xpath("//table/tbody/tr/td[4]/span/button[2]")).click();

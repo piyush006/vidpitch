@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
@@ -21,10 +22,11 @@ import org.testng.annotations.Test;
 public class PurchaseVideoF extends Setup{
 	@Test
 	
-	public void purchasef() throws InterruptedException{
+	public void purchasef() throws InterruptedException, IOException{
 
+		Propertiesefile get = new Propertiesefile();
 
-	driver.findElement(By.id("email")).sendKeys("Kathy.Bodnar.f75073a8e08247398de51777417cf125@mailinator.com");
+	driver.findElement(By.id("email")).sendKeys(get.getemailmozila());
 	driver.findElement(By.id("password")).sendKeys("SK47Bill@n");
 	driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();
 	driver.findElement(By.xpath("//table/tbody/tr/td[1]")).click();

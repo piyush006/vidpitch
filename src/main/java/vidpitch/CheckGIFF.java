@@ -1,5 +1,6 @@
 package vidpitch;
 
+import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -26,9 +27,11 @@ public class CheckGIFF extends Setup{
 	
 	
 	@Test
-	public void checkgiff() throws InterruptedException {
+	public void checkgiff() throws InterruptedException, IOException {
 		
-		driver.findElement(By.id("email")).sendKeys("Kathy.Bodnar.f75073a8e08247398de51777417cf125@mailinator.com");
+		Propertiesefile get = new Propertiesefile();
+		
+		driver.findElement(By.id("email")).sendKeys(get.getemailmozila());
 		driver.findElement(By.id("password")).sendKeys("SK47Bill@n");
 		driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();
 		driver.findElement(By.xpath("//table/tbody/tr/td[4]/span/button[2]")).click();

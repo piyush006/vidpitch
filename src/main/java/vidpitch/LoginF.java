@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
@@ -24,9 +25,10 @@ public class LoginF extends Setup{
 	
 @Test
 	
-	public void loginf() {
+	public void loginf() throws IOException {
+	Propertiesefile get = new Propertiesefile();
 		
-	driver.findElement(By.id("email")).sendKeys("Kathy.Bodnar.f75073a8e08247398de51777417cf125@mailinator.com");
+	driver.findElement(By.id("email")).sendKeys(get.getemailmozila());
 	driver.findElement(By.id("password")).sendKeys("SK47Bill@n");
 	driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();
 	driver.findElement(By.xpath("//span[@class='user-circle rounded-circle']")).click();
