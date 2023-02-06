@@ -17,6 +17,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 public class PurchaseVideoF extends Setup{
@@ -54,10 +56,13 @@ public class PurchaseVideoF extends Setup{
 
 	driver.switchTo().defaultContent();
 
-	driver.findElement(By.xpath("//span[@id='button-text']")).click();
-	Thread.sleep(3000);
-	
+	Thread.sleep(2000);
 
+	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(240));
+	Thread.sleep(1000);
+	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@id='button-text']"))).click();
+
+	Thread.sleep(3000);
 
 
 

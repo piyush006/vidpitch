@@ -61,11 +61,14 @@ public class ModifyVideo extends Setup {
 		driver.findElement(By.xpath("//input[@label='Broker Office Full Address']")).sendKeys(Keys.CONTROL,Keys.chord("A"),Keys.DELETE);
 		driver.findElement(By.xpath("//input[@label='Broker Office Full Address']")).sendKeys("Crystal IT Park 4th floor");
 		
+		Thread.sleep(1000);
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
-		
+		Thread.sleep(1000);
 		driver.findElement(By.xpath("//button[normalize-space()='Make My New Video!']")).click();
+		Thread.sleep(1000);
 		
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(240));
+		Thread.sleep(1000);
 	   wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@type='button']"))).click();
 	   driver.findElement(By.xpath("//button[@type='submit']")).click();
 		Thread.sleep(1000);

@@ -15,6 +15,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -54,17 +56,20 @@ System.out.println(allframes);
 
 driver.switchTo().frame(driver.findElement(By.tagName("iframe")));
 
-
+Thread.sleep(3000);
 driver.findElement(By.xpath("//input[@placeholder='1234 1234 1234 1234']")).sendKeys("4242424242424242");
 driver.findElement(By.id("Field-expiryInput")).sendKeys("0224");
 driver.findElement(By.id("Field-cvcInput")).sendKeys("123");
 
 driver.switchTo().defaultContent();
 
-Thread.sleep(3000);
+Thread.sleep(2000);
 
-driver.findElement(By.xpath("//span[@id='button-text']")).click();
-Thread.sleep(4000);
+WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(240));
+Thread.sleep(1000);
+wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@id='button-text']"))).click();
+
+Thread.sleep(3000);
 
 
 
