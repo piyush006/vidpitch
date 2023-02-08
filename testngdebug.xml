@@ -4,7 +4,8 @@
   <test name="Test1" >
   <parameter name="browserName" value ="chrome"></parameter>
     <classes>
-      <class name="vidpitch.PurchaseVideo"/>
+     <class name="vidpitch.PurchaseVideo"/>
+       <class name="vidpitch.DownloadVideoF"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

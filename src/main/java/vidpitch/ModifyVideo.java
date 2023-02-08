@@ -68,9 +68,11 @@ public class ModifyVideo extends Setup {
 		Thread.sleep(1000);
 		
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(240));
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 	   wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@type='button']"))).click();
+	   Thread.sleep(3000);
 	   driver.findElement(By.xpath("//button[@type='submit']")).click();
+	 
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		Thread.sleep(1000);

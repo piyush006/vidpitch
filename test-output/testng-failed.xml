@@ -4,13 +4,11 @@
   <test thread-count="5" name="Test1(failed)">
     <parameter name="browserName" value="chrome"/>
     <classes>
-      <class name="vidpitch.PurchaseVideo">
+      <class name="vidpitch.DownloadVideoF">
         <methods>
-          <include name="purchaseg"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
+          <include name="DownloadVideo"/>
         </methods>
-      </class> <!-- vidpitch.PurchaseVideo -->
+      </class> <!-- vidpitch.DownloadVideoF -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
